@@ -4,18 +4,20 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class DefaultInitializationTest {
+
     @Test
-    public void getNewString() throws Exception {
+    public void testDefaultVariable() throws Exception {
         DefaultInitialization defaultInitialization = new DefaultInitialization();
-        String expectedStringPlusDefaultValue = "Testnull";
+        String expectedStringPlusDefaultValue = "null";
+        boolean expectedBooleanDefaultClassVariable = false;
+        int expectedIntDefaultClassVariable = 0;
 
-        String actualStringPlusDefaultValue = defaultInitialization.getNewString("Test");
+        String actualStringPlusDefaultValue = defaultInitialization.getNewString("");
+        boolean actualBooleanDefaultClassVariable = defaultInitialization.booleanClassVariable;
+        int actualIntDefaultClassVariable = defaultInitialization.intClassVariable;
 
-        boolean booleanClassVariable = defaultInitialization.booleanClassVariable;
-
-        assertThat(expectedStringPlusDefaultValue, Is.is(actualStringPlusDefaultValue));
-
-
-
+        assertThat(actualStringPlusDefaultValue, Is.is(expectedStringPlusDefaultValue));
+        assertThat(actualBooleanDefaultClassVariable, Is.is(expectedBooleanDefaultClassVariable));
+        assertThat(actualIntDefaultClassVariable, Is.is(expectedIntDefaultClassVariable));
     }
 }
