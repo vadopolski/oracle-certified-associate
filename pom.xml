@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>ch1-java-building-blocks</module>
+        <module>ch2-operators-and-statements</module>
     </modules>
 
 
