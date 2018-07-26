@@ -11,7 +11,18 @@
     <modules>
         <module>ch1-java-building-blocks</module>
         <module>ch2-operators-and-statements</module>
+        <module>ch3-core-java-apis</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
 
 
 </project>
