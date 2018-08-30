@@ -12,6 +12,7 @@
         <module>ch1-java-building-blocks</module>
         <module>ch2-operators-and-statements</module>
         <module>ch3-core-java-apis</module>
+        <module>ch5-class-design</module>
     </modules>
 
     <dependencies>
