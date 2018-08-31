@@ -58,7 +58,7 @@ public class DateTimeFormatterExampleTest {
 
     @Test
     public void format_SHORT_date_time_test(){
-        String expectedDate = "17.11.20 11:34";
+        final String expectedDate = "17.11.20 11:34";
         
         final DateTimeFormatter dateTimeFormatterShort = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
         final String actualDate = dateTime.format(dateTimeFormatterShort);
@@ -69,7 +69,6 @@ public class DateTimeFormatterExampleTest {
     @Test
     public void format_PATTERN_date_time_test(){
         String expectedDate = "11:34 17.11.2020";
-        
         final DateTimeFormatter dateTimeFormatterPattern = DateTimeFormatter.ofPattern("hh:mm dd.MM.yyyy");
         
         final String actualDate = dateTime.format(dateTimeFormatterPattern);
