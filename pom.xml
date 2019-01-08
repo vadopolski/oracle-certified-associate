@@ -13,6 +13,7 @@
         <module>ch2-operators-and-statements</module>
         <module>ch3-core-java-apis</module>
         <module>ch5-class-design</module>
+        <module>test-questions</module>
     </modules>
 
     <dependencies>
